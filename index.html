@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💕 Will You Be My Valentine? 💕</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- CHANGE THIS: swap Nunito for any Google Font you like -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Floating hearts container (JS-generated) -->
+  <div id="hearts-container" aria-hidden="true"></div>
+
+  <!-- Main card -->
+  <div class="card" id="card">
+
+    <h1 class="title" id="title">
+      Will you be my Valentine?&nbsp;💕
+    </h1>
+
+    <!-- GIF character — cycles through emotional stages -->
+    <div class="gif-wrap">
+      <img id="character-gif" src="" alt="Cute character reacting" />
+    </div>
+
+    <!-- Toast message area -->
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <!-- Buttons -->
+    <div class="btn-row" id="btn-row">
+      <button id="yes-btn" class="btn btn-yes" onclick="handleYes()">Yes! 💖</button>
+      <button id="no-btn"  class="btn btn-no"  onclick="handleNo()">No</button>
+    </div>
+
+  </div>
+
+  <!-- Floating music toggle -->
+  <button id="music-toggle" class="music-btn" onclick="toggleMusic()" title="Toggle music">🔊</button>
+
+  <!-- CHANGE THIS: replace with any royalty-free/public-domain romantic audio URL -->
+  <audio id="bg-music" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"/>
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
